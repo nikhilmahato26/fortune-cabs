@@ -38,16 +38,21 @@ export default function Navbar() {
   const Logo = ({ light }) => (
     <a href="#home" onClick={(e) => handleLinkClick(e, '#home')} className="flex items-center gap-2.5 group select-none">
       <svg 
-        className={`w-9 h-9 transition-transform duration-300 group-hover:scale-105 ${light ? 'text-brand-gold' : 'text-brand-gold'}`} 
-        viewBox="0 0 100 100" 
+        className="w-12 h-9 transition-transform duration-300 group-hover:scale-105" 
+        viewBox="0 0 100 60" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M15 72H85" stroke={light && !isScrolled ? "#FFFFFF" : "#111827"} strokeWidth="2.5" strokeLinecap="round" />
-        <path d="M25 72L30 52C31.5 46.5 35.5 43 41.5 43H58.5C64.5 43 68.5 46.5 70 52L75 72" stroke="#D4A017" strokeWidth="3" strokeLinecap="round" />
-        <circle cx="36" cy="72" r="5" fill="#D4A017" stroke={light && !isScrolled ? "#111827" : "#FFFFFF"} strokeWidth="2" />
-        <circle cx="64" cy="72" r="5" fill="#D4A017" stroke={light && !isScrolled ? "#111827" : "#FFFFFF"} strokeWidth="2" />
-        <path d="M10 82H90" stroke="#D4A017" strokeWidth="2" strokeDasharray="5 4" strokeLinecap="round" />
+        {/* Gold road line */}
+        <path d="M10 48C35 48 55 34 90 28" stroke="#D4A017" strokeWidth="3" strokeLinecap="round" />
+        {/* Car body */}
+        <path d="M22 41C26 40 35 38 40 34C44 31 52 30 58 30C65 30 74 33 78 36L84 41H86C88 41 89 43 88 44C87 45 85 46 82 46H24C22 46 20 44 20 43C20 42 21 41 22 41Z" fill={light && !isScrolled ? "#FFFFFF" : "#111827"} />
+        {/* Car windows */}
+        <path d="M42 34.5C45 32 52 31.5 56 31.5V35.5H41.5L42 34.5Z" fill={light && !isScrolled ? "#111827" : "#FFFFFF"} opacity="0.8" />
+        <path d="M58 31.5C62 31.5 68 32.5 71 35.5H58V31.5Z" fill={light && !isScrolled ? "#111827" : "#FFFFFF"} opacity="0.8" />
+        {/* Wheels */}
+        <circle cx="34" cy="46" r="4.5" fill={light && !isScrolled ? "#FFFFFF" : "#111827"} stroke="#D4A017" strokeWidth="2" />
+        <circle cx="70" cy="46" r="4.5" fill={light && !isScrolled ? "#FFFFFF" : "#111827"} stroke="#D4A017" strokeWidth="2" />
       </svg>
       <div className="flex flex-col">
         <span className={`font-playfair font-bold text-lg tracking-wider leading-none transition-colors duration-300 ${light && !isScrolled ? 'text-white' : 'text-brand-dark'}`}>
