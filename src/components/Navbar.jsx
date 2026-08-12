@@ -38,7 +38,7 @@ export default function Navbar() {
   const Logo = ({ light }) => (
     <a href="#home" onClick={(e) => handleLinkClick(e, '#home')} className="flex items-center gap-2.5 group select-none">
       <svg 
-        className="w-12 h-9 transition-transform duration-300 group-hover:scale-105" 
+        className="w-16 h-12 sm:w-20 sm:h-14 transition-transform duration-300 group-hover:scale-105" 
         viewBox="0 0 100 60" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
@@ -55,10 +55,10 @@ export default function Navbar() {
         <circle cx="70" cy="46" r="4.5" fill={light && !isScrolled ? "#FFFFFF" : "#111827"} stroke="#D4A017" strokeWidth="2" />
       </svg>
       <div className="flex flex-col">
-        <span className={`font-playfair font-bold text-lg tracking-wider leading-none transition-colors duration-300 ${light && !isScrolled ? 'text-white' : 'text-brand-dark'}`}>
+        <span className={`font-playfair font-bold text-xl sm:text-2xl tracking-wider leading-none transition-colors duration-300 ${light && !isScrolled ? 'text-white' : 'text-brand-dark'}`}>
           FORTUNE
         </span>
-        <span className={`font-inter text-[10px] uppercase tracking-[0.25em] font-semibold leading-none mt-1 transition-colors duration-300 ${light && !isScrolled ? 'text-gray-300' : 'text-brand-muted'}`}>
+        <span className={`font-inter text-[11px] sm:text-xs uppercase tracking-[0.25em] font-semibold leading-none mt-1 transition-colors duration-300 ${light && !isScrolled ? 'text-gray-300' : 'text-brand-muted'}`}>
           Cabs
         </span>
       </div>

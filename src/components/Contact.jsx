@@ -100,15 +100,18 @@ export default function Contact({ selectedVehicle }) {
                 </div>
               </div>
 
+
               {/* Contact Item: Business Info */}
               <div className="flex gap-4 items-start">
                 <div className="p-3.5 bg-white rounded-xl text-brand-gold shadow-sm border border-brand-border/40">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-brand-dark text-sm uppercase tracking-wider mb-1">Fortune Cabs</h4>
+                  <h4 className="font-semibold text-brand-dark text-sm uppercase tracking-wider mb-1">Office Address</h4>
                   <p className="text-brand-muted font-light text-sm leading-relaxed">
-                    Reliable • Comfortable • Professional • Affordable Cab Service. Available for local outings, outstations, and airport runs.
+                    8-3-678, Emerald block, Shop no-4,<br />
+                    Sri Sai Ram Manor, Pragathi Nagar,<br />
+                    Yousufguda, Hyderabad-500045. TG
                   </p>
                 </div>
               </div>

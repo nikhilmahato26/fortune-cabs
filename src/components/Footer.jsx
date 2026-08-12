@@ -147,10 +147,11 @@ export default function Footer() {
                 </a>
               </div>
 
+
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
                 <span className="font-light leading-relaxed">
-                  Fortune Cabs Transportation Services, India.
+                  8-3-678, Emerald block, Shop no-4, Sri Sai Ram Manor, Pragathi Nagar, Yousufguda, Hyderabad-500045. TG
                 </span>
               </div>
             </div>
